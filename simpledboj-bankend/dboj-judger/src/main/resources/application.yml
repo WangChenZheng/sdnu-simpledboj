@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      # 单个文件最大大小
+      max-file-size: 1MB
+      # 整个请求最大大小
+      max-request-size: 10MB
+      # 上传文件的临时存储阈值
+      file-size-threshold: 2KB
+  datasource:
+    url: jdbc:mysql://localhost:3306/sdnudboj?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Wangchen@230257
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 124.70.54.129
+    port: 6379
+    timeout: 1800000
+    lettuce:
+      pool:
+        max-wait: -1
+        max-active: 20
+
+#mybatis-plus:
+#  configuration:
+#    # 输出SQL语句
+#    log-impl=org: apache.ibatis.logging.stdout.StdOutImpl
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+  file:
+    name: /log.txt

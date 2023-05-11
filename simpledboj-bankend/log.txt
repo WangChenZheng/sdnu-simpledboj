@@ -1,0 +1,32 @@
+2023-05-09 00:54:26.374  INFO 9760 --- [main] com.sdnu.dboj.judger.JudgerApplication   : Starting JudgerApplication on morninglaptap with PID 9760 (H:\Projects\Java\OnlineJudgeForDB\dboj-judger\target\classes started by WangChen in H:\Projects\Java\OnlineJudgeForDB)
+2023-05-09 00:54:26.378  INFO 9760 --- [main] com.sdnu.dboj.judger.JudgerApplication   : No active profile set, falling back to default profiles: default
+2023-05-09 00:54:27.230  INFO 9760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-09 00:54:27.232  INFO 9760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-05-09 00:54:27.267  INFO 9760 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2023-05-09 00:54:27.546  INFO 9760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.sdnu.dboj.judger.config.RedisConfig$$EnhancerBySpringCGLIB$$7a8e6e8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-09 00:54:27.551  INFO 9760 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-09 00:54:27.776  INFO 9760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-09 00:54:27.784  INFO 9760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-09 00:54:27.784  INFO 9760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2023-05-09 00:54:27.902  INFO 9760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-09 00:54:27.903  INFO 9760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1469 ms
+2023-05-09 00:54:30.084  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2023-05-09 00:54:30.084  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/index.html'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/img/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/fonts/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/favicon.ico'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/JsonLogin.html'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-resources/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/webjars/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/v2/**'], []
+2023-05-09 00:54:30.085  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/swagger-ui.html/**'], []
+2023-05-09 00:54:30.103 DEBUG 9760 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_admin')', for Ant [pattern='/admin/**']
+2023-05-09 00:54:30.105 DEBUG 9760 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for any request
+2023-05-09 00:54:30.110 DEBUG 9760 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2023-05-09 00:54:30.110 DEBUG 9760 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2023-05-09 00:54:30.112  INFO 9760 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cdd31a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@36e3321e, org.springframework.security.web.header.HeaderWriterFilter@48ee3c2d, org.springframework.web.filter.CorsFilter@7dddfc35, org.springframework.security.web.authentication.logout.LogoutFilter@347b370c, com.sdnu.dboj.judger.filter.UserAuthenticationFilter@71316cd7, com.sdnu.dboj.judger.filter.TokenAuthenticationFilter@6106dfb6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d9af731, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@210c1b9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14239223, org.springframework.security.web.session.SessionManagementFilter@3a80c534, org.springframework.security.web.access.ExceptionTranslationFilter@111fe921, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64ed18ec]
+2023-05-09 00:54:30.704  INFO 9760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-09 00:54:30.707  INFO 9760 --- [main] com.sdnu.dboj.judger.JudgerApplication   : Started JudgerApplication in 4.756 seconds (JVM running for 6.23)
