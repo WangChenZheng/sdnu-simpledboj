@@ -20,8 +20,8 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   redis:
-    host: your redis ip
-    port: 6379
+    host: # your redis ip
+    port: # your redis port
     timeout: 1800000
     lettuce:
       pool:
