@@ -114,7 +114,7 @@ public class ExecService {
             return false;
         }
         if (!flag) {
-            System.out.println("judge result: " + testProcedure.getModuleId());
+            System.out.println("judge result: " + testProcedure.getModuleId() + " is failure");
             return false;
         }
         System.out.println("judge result: " + testProcedure.getModuleId() + " is right");
